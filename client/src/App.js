@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 import theme from './theme.js'
+import CreateListing from './components/Listing/CreateListing';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -32,6 +33,7 @@ function App() {
 				<Header />
 					<Routes>
 							<Route path="/" element={<Home />}/>
+							<Route path="/create" element={<CreateListing />}/>
 					</Routes>
 				</BrowserRouter>
 

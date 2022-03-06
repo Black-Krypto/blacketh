@@ -1,0 +1,24 @@
+.search {
+	position: relative;
+	width: 80%;
+	bottom: 100px;
+}
+
+.headerText {
+	color: #5271FF;
+	font-size: 35px;
+	padding: 20px 10px 0px 60px;
+}
+
+.inputGrid {
+	padding: 20px 60px 40px 60px;
+}
+
+.field {
+	color: black;
+	width: 80%;
+}
+
+.searchButton {
+	width: 140px;
+}
