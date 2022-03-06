@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Header from './components/Header/Header';
 import theme from './theme.js'
 import CreateListing from './components/Listing/CreateListing';
+import MyListing from './components/Listing/MyListing';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -34,6 +35,7 @@ function App() {
 					<Routes>
 							<Route path="/" element={<Home />}/>
 							<Route path="/create" element={<CreateListing />}/>
+							<Route path="/mylisting" element={<MyListing />}/>
 					</Routes>
 				</BrowserRouter>
 

@@ -26,9 +26,10 @@ const Home = () => {
 			</Grid>
 
 			<Grid container>
-
+				<h2 className={styles.listingText}>Recent Listings</h2>
+				<RecentListings />
 			</Grid>
-			<RecentListings />
+
 		</div>
 	)
 }

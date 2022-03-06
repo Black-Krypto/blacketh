@@ -7,7 +7,6 @@ import styles from './RecentListings.module.css'
 const RecentListings = () => {
 	return (
 		<Grid className={styles.container} container>
-			<h2>Our Recent Listings</h2>
 			<Grid container >
 				<Grid container item xs={4} justifyContent="center">
 					<ListingCard src={listing} location="6834 Breanna Cardill Street"/>

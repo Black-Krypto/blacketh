@@ -14,3 +14,8 @@
 .text {
 	padding: 90px 0px 0px 0px;
 }
+
+.listingText  {
+	font-size: 40px;
+	padding-left: 220px;
+}

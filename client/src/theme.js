@@ -10,6 +10,7 @@ export default createTheme({
 					borderRadius: 0,
           fontSize: '1rem',
 					textTransform: 'none',
+					textDecoration: 'none',
         },
       },
     },

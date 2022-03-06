@@ -23,10 +23,14 @@ const Header = () => {
 					</a>
 				</Grid>
 				<Grid item xs={1.5}>
-					<Button style={{color: 'black', backgroundColor: 'white'}} variant="text">Land for sale</Button>
+					<a href="/mylisting">
+						<Button style={{color: 'black', backgroundColor: 'white', textDecoration: 'none'}} variant="text">My Listings</Button>
+					</a>
 				</Grid>
 				<Grid item xs={1.5}>
-					<Button style={{color: 'black', backgroundColor: 'white'}} variant="text">Homes for sale</Button>
+					<a href="/create">
+						<Button style={{textDecoration: 'none', color: 'black', backgroundColor: 'white'}} variant="text">Create Listing</Button>
+					</a>
 				</Grid>
 				<Grid item xs={1.5}>
 					<Button style={{color: 'black', backgroundColor: 'white'}} variant="text">Investment Tools</Button>

@@ -17,35 +17,79 @@ const CreateListing = () => {
 	}
 	
 	return (
-		<Grid className={styles.container} container justifyContent="center" alignItems="center">
+		<Grid className={styles.container} container direction="column" justifyContent="center" alignItems="center">
 
-			<form className={styles.container} onSubmit={handleSubmit}>
-					<Button
-		variant="contained"
-		component="label"
-	>
-		Upload File
-		<input
-			type="file"
-			hidden
-		/>
-	</Button>
-		<Grid container>
-			<Field name="firstName" label="First Name" handleChange={handleChange} autoFocus half />
-			<Field name="lastName" label="Last Name" handleChange={handleChange} autoFocus half />
+		<Grid item>
+			<h2 className={styles.text}>Create Listing</h2>
 		</Grid>
+		<form className={styles.container} onSubmit={handleSubmit}>
+
+		<Grid item>
+			<p>Upload Pictures *</p>
+			<Button
+			variant="contained"
+			component="label"
+			>
+				Upload File
+				<input
+					type="file"
+					hidden
+				/>
+			</Button>
+		</Grid>
+
+		<br></br>
+		<br></br>
+
+		<Grid item>
+			<p>Upload Certification *</p>
+			<Button
+			variant="contained"
+			component="label"
+			>
+				Upload File
+				<input
+					type="file"
+					hidden
+				/>
+			</Button>
+		</Grid>
+
+	<br></br>
+	<br></br>
+	<Grid item>
+		<Field name="firstName" label="Address" handleChange={handleChange} autoFocus/>
+	</Grid>
+	<br></br>
+	<br></br>
+		<Grid container spacing={5}>
+			<Field name="firstName" label="Country" handleChange={handleChange} autoFocus half />
+			<Field name="lastName" label="Postal Code" handleChange={handleChange} autoFocus half />
+		</Grid>
+		<br></br>
+		<br></br>
+		<Grid container spacing={5}>
+			<Field name="firstName" label="Type" handleChange={handleChange} autoFocus half />
+			<Field name="lastName" label="Starting Price" handleChange={handleChange} autoFocus half />
+		</Grid>
+		<br></br>
+		<br></br>
 		<Grid container>
 			<TextField 
+				style={{width: '100%'}}
 				id="filled-multiline-static"
-				label="Multiline"
+				label="Listing Description"
 				multiline
 				rows={4}
 				defaultValue="Default Value"
 				variant="filled"
 			/>
 		</Grid>
-			</form>
-		</Grid>
+		<br></br>
+		<br></br>
+		<Button >Create</Button>
+		</form>
+	</Grid>
 	)
 }
 
